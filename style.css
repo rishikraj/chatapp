@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+body
+{
+    background-color:#bfbfbf;
+    background-image: url("back.png");
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+h1
+{
+    text-align: center;
+    margin:0;
+}
+.row::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] 
+{
+    float: left;
+    padding: 5px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+html 
+{
+    font-family: "Lucida Sans", sans-serif;
+}
+h3
+{
+    margin:0 auto;
+    display: inline-block;
+}
+.header 
+{
+    margin:0 auto;
+    background:rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 3px 7px 0px #000;
+    text-align:center;
+    margin-bottom: 10px;
+    font-family: 'Rock Salt', cursive;
+}
+.card form
+{
+    max-width: 500px;
+    padding: 0 20px;
+}
+.card form input,textarea
+{
+    border:0;
+    outline: 0;
+    border-bottom:3px solid #307733;
+    width: 88%;
+    /*-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;*/
+    padding: 10px;
+    font-size: 16px; 
+    display: block;
+    margin: 20px;
+    margin-bottom: 20px; 
+    background-color: rgba(255,255,255,0);   
+}
+.card form textarea
+{
+    width:90%;
+    margin-left:10px;
+    height:135px;
+    border:3px solid #307733;
+}
+.card form [type="submit"] 
+{
+    background: rgb(78, 169, 47);;
+    color: white;
+    font-family: 'Monotype Corsiva';
+    font-size: 24px;
+    width: 30%;
+    padding: 8px;
+    margin-left: 32%;
+    margin-top: 0;
+    transition-duration: 1.5s;
+    display: inline-block;
+    cursor:pointer;
+}
+.card form [type="submit"]:hover 
+{
+
+    background: rgb(41,135,31);
+}
+.card.home.right form [type="submit"]
+{
+    width:80%;
+    margin-left:20px;
+}
+.card
+{
+    background:rgba(255, 255, 255, 0.5);
+    box-shadow: 4px 6px 20px 0px #000;  
+    height: 470px;
+    margin-top:20px;
+    font-family: 'Tangerine', cursive;
+    font-size:33px;
+    align-items: center;
+}
+.card.center
+{
+    height:428px;
+}
+.card.users
+{
+    overflow-y: scroll;
+
+}
+.card.users::-webkit-scrollbar
+{
+    width: 5px;
+}
+.card.users::-webkit-scrollbar-track
+{
+    -webkit-box-shadow:inset 0 0 6px #23A9EF;
+}
+.card.users::-webkit-scrollbar-thumb
+{
+    background-color:rgba(28,130,45,0.5);
+    outline:0px solid slategrey;
+}
+.card.userlist
+{
+    height:40px;
+    box-shadow: 2px 2px 3px 0px #000;
+    margin:5px auto;
+}
+.card.userlist a
+{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 32px;
+}
+.users .header
+{
+
+}
+.card.chat
+{
+    overflow-y: scroll;
+}
+.card.chat::-webkit-scrollbar
+{
+    width: 5px;
+}
+.card.chat::-webkit-scrollbar-track
+{
+    -webkit-box-shadow:inset 0 0 6px #23A9EF;
+}
+.card.chat::-webkit-scrollbar-thumb
+{
+    background-color:rgba(28,130,45,0.5);
+    outline:0px solid slategrey;
+}
+.card.footer.home
+{
+    height: 44px;
+    padding: 5px;
+    margin-top: 41px;
+}
+.card.right.home a
+{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+    padding-left: 50px;
+    cursor: pointer;
+}
+.errorMsg
+{
+    font-family: 'Monotype Corsiva';
+    color:red;
+    padding-left: 20px;
+    font-size:25px;
+}
+
+.head
+{
+    font-weight: bold;
+}
+.message
+{
+    font-family: 'Shadows Into Light', cursive;
+    background-color:#BCEFBB;
+}
+
+.message.left
+{
+    text-align: left;
+    background-color:#BCEFBB;
+}
+.message.right
+{
+    text-align: right;
+    background-color:#AECFE0;
+}
+.message p
+{
+    padding:auto;
+    margin:0 auto;
+    background-color: (255,255,255,1);
+}
+h4
+{
+    padding: 2px;
+    margin:inherit;
+}
+h4 a
+{
+    color: white;
+}
+@media only screen and (max-width: 720px) 
+{
+     body
+     {
+        background-image: url("back.png");
+     }
+    .col-1
+    {
+        display: none;
+    }
+    .col-6
+    {
+        width:100%;
+    }
+    .col-3
+    {
+        width: 100%;
+        height:auto;
+    }
+    .header
+    {
+        width:100%;
+    }
+    .card.left
+    {
+        width:100%;
+        height:400px;
+        margin-top:auto;
+        font-weight: 200;
+        font-size: 18px;
+        font-family: serif;
+        padding-left: 0;
+    }
+    .card.right
+    {
+        width:100%;
+        height:auto;
+        font-weight: 200;
+        font-size: 18px;
+        font-family: serif;
+        padding-left: 0;
+    }
+    .card.users
+    {
+        width:100%;
+        height:auto;
+        font-weight: 200;
+        font-size: 18px;
+        font-family: serif;
+        padding-left: 0;
+        margin-top:0;
+    }
+    .card.userlist
+    {
+        width: 100%;
+    }
+    .card.footer.home
+    {
+        margin-top: 11px;
+    }
+}

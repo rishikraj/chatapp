@@ -1,0 +1,12 @@
+body
+{
+	font:0.8em Arial;
+}
+.chat .messages
+{
+	border:1px solid #ccc;
+	width:250px;
+	height: 210px;
+	padding:10px;
+	overflow-y: scroll;
+}
